@@ -10,7 +10,7 @@ class Solution:
         x = np.array(x)
         gamma = np.array(gamma)
 
-        rms = np.sqrt(np.mean(x**2) + eps)
+        rms = np.sqrt(np.sum(x**2)/len(x) + eps)
 
         x_hat = x/rms
 
